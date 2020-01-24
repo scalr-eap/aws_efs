@@ -6,10 +6,10 @@ variable "efs_name" {
   description = "Name of the EFS"
 }
 
-variable "subnnet" {
-  description = "region"
+variable "subnet" {
+  description = "Subnet CIDR"
 }
 
-variable "subnnet" {
-  description = "ip_address"
+variable "ip_address" {
+  description = "IP Address of the server(s) you want to mount the EFS to"
 }
