@@ -5,5 +5,4 @@ data "aws_efs_file_system" "scalr" {
 resource "aws_efs_mount_target" "scalr" {
   file_system_id = "${data.aws_efs_file_system.scalr.id}"
   subnet_id      = var.subnet
-  ip_address     = var.ip_address
 }
