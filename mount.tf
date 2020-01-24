@@ -1,5 +1,5 @@
 data "aws_efs_file_system" "scalr" {
-  name = var.efs_name
+  creation_token = var.efs_name
 }
 
 resource "aws_efs_mount_target" "scalr" {
